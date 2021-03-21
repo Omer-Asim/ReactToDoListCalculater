@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  max-width: 100vw;
+  background-color: rgba(209, 205, 199, 0.26);
+}
+.yapilanlar {
+  max-height: 50vh;
+  background: linear-gradient(rgb(118, 86, 122), rgba(233, 219, 219, 0.747));
+  border-radius: 10px;
+  opacity: 0.8;
+  overflow: auto;
+}
+ol li {
+  border-bottom: 2px solid black;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: rgba(rgb(11, 134, 165), green, blue, alpha);
+}
+header {
+  background-color: rgba(10, 61, 98, 0.5);
+  height: 5vh;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+.form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+  opacity: 0.8;
+}
+input {
+  padding: 5px;
+  margin: 5px;
+
+}
+input[type="text"],input[type="email"],input[type="password"]{
+  border: none;
+  outline: none;
+  max-width: 30vh;
+  width: 40vh;
+}
+
+
+input[type="text"],input[type="email"],input[type="password"]:focus {
+}
+.liClass {
+  text-decoration: line-through;
+}
+.hesap-makinesi {
+  display: grid;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.formKayit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  /* background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 15%, #414141 54%); */
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  
+}
+.animation-deneme {
+  animation-duration: 5s;
+  animation-name: animasyon;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animasyon {
+  from {
+    background-color: yellow;
+    margin-left: 0;
+    border-radius: 0;
+  }
+  to {
+    background-color: teal;
+    margin-left: 400px;
+    border-radius: 10px;
+  }
+}
+.altiniciz {
+  text-decoration: line-through;
+  color: aliceblue;
+}
+input[type="submit"]:hover {
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+@media (max-width: 600px) {
+  .responsive {
+    min-width: 50vh;
+    font-size: 36px;
+  }
+  .responsive div {
+    min-width: 50vh;
+    font-size: 10px;
+  }
+}
